@@ -104,9 +104,9 @@
                     Emeralds = Math.DivRem(Rads, 20, Remainder)
 
                     If Remainder = 0 Then
-                        TextBox4.AppendText("There are " + Emeralds.ToString + " Emeralds")
+                        TextBox4.AppendText("There are " + Emeralds.ToString + " Emeralds" + vbCrLf)
                     ElseIf Remainder > 0 Then
-                        TextBox4.AppendText("There are " + Emeralds.ToString + " Emeralds and " + Remainder.ToString + " Radiants remaining.")
+                        TextBox4.AppendText("There are " + Emeralds.ToString + " Emeralds and " + Remainder.ToString + " Radiants remaining." + vbCrLf)
                     End If
 
                     If DoEmeralds = True Then
@@ -154,7 +154,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        TextBox4.AppendText("Author: Devin Duanne (Foxtrek_64).")
-        TextBox4.AppendText("License: CC BY-NC-SA 4.0 International")
+        TextBox4.AppendText("Author: Devin Duanne (Foxtrek_64)." + vbCrLf)
+        TextBox4.AppendText("License: CC BY-NC-SA 4.0 International" + vbCrLf)
     End Sub
 End Class
