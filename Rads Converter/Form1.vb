@@ -132,6 +132,9 @@
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+        TextBox1.ResetText()
+        TextBox2.ResetText()
+        TextBox3.ResetText()
         TextBox4.ResetText()
     End Sub
 
